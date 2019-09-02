@@ -11,10 +11,7 @@ export class PostService {
   constructor(private http: HttpClient) {
     this.url = 'http://localhost/carlosalurban/backend/wp-json';
   }
-  getPosts(): Observable<any> {
-    return this.http.get(this.url + '/wp/v2/posts');
-  }
-  getPostSearch(wordSearch): Observable<any> {
-    return this.http.get(this.url + 'wp/v2/posts?search=' + wordSearch);
+  getMedia(): Observable<any> {
+    return this.http.get(this.url + '/wp/v2/media');
   }
 }

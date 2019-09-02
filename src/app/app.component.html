@@ -1,18 +1,12 @@
 <nav>
   <div>
-    <a [routerLink]="['/home']">INICIO</a>
+    <a [routerLink]="['/about']" [routerLinkActive]="['actived']">SOBRE MI</a>
   </div>
   <div>
-    <a [routerLink]="['/about']">SOBRE MI</a>
+    <a [routerLink]="['/portfolio']" [routerLinkActive]="['actived']">PORTFOLIO</a>
   </div>
   <div>
-    <a [routerLink]="['/web']">WEB</a>
-  </div>
-  <div>
-    <a [routerLink]="['/design']">DISEÑO</a>
-  </div>
-  <div>
-    <a [routerLink]="['/contact']">COTACTO</a>
+    <a [routerLink]="['/contact']"  [routerLinkActive]="['actived']">COTACTO</a>
   </div>
 </nav>
 <router-outlet></router-outlet>
