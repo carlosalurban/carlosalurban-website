@@ -1,28 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing, appRoutingProviders } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
-import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { DesignComponent } from './components/design/design.component';
-import { WebComponent } from './components/web/web.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     AboutComponent,
-    DesignComponent,
-    WebComponent,
     ContactComponent,
-    ErrorComponent
+    ErrorComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpClientModule
   ],
   providers: [
     appRoutingProviders,

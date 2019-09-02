@@ -1,20 +1,16 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { DesignComponent } from './components/design/design.component';
-import { WebComponent } from './components/web/web.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'home', component: HomeComponent},
+  { path: '', component: AboutComponent},
   { path: 'about', component: AboutComponent},
-  { path: 'design', component: DesignComponent},
-  { path: 'web', component: WebComponent},
+  { path: 'portfolio', component: PortfolioComponent},
   { path: 'contact', component: ContactComponent},
   { path: '**', component: ErrorComponent}
 ];
