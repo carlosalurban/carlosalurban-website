@@ -1,0 +1,12 @@
+.navbar{
+    box-shadow: 6px 9px 14px -10px rgba(0,0,0,0.78);
+}
+.navbar a {
+    transition: color 0.8s!important;
+}
+.nav-item:active{
+    color:rgb(179, 136, 29)!important;
+}
+.navbar a:hover {
+    color: rgb(179, 136, 29) !important;
+}

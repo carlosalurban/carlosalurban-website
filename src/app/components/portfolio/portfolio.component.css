@@ -1,0 +1,8 @@
+#post .article-portfolio {
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 12px;
+    color: whitesmoke;
+    box-shadow: 6px 9px 14px -10px rgba(0,0,0,0.78);
+}

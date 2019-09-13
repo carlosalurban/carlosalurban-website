@@ -7,11 +7,13 @@ import { Observable } from 'rxjs';
 })
 export class PostService {
   public url: string;
-
   constructor(private http: HttpClient) {
-    this.url = 'http://localhost/carlosalurban/backend/wp-json';
+    this.url = 'http://calroskadabra.esy.es/wp/wp-json/wp/v2';
   }
-  getMedia(): Observable<any> {
-    return this.http.get(this.url + '/wp/v2/media');
+  getPosts(): Observable<any> {
+    return this.http.get(this.url + '/posts');
+  }
+  getMedia() {
+    return this.http.get(this.url + '/media');
   }
 }

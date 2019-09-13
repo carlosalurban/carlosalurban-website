@@ -1,10 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-img{
+
+img {
     width: 100% !important;
-    height:auto
+    height: auto;
+    vertical-align: top !important;
 }
-#post .articulo {
-    background-color: #eee !important;
-    border: 5px solid white;
-    padding: 20px;
-}
+
