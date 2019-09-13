@@ -10,7 +10,10 @@ export class PostService {
   constructor(private http: HttpClient) {
     this.url = 'http://calroskadabra.esy.es/wp/wp-json/wp/v2';
   }
-  getMedia(): Observable<any> {
-    return this.http.get(this.url + '/pages?_embed');
+  getPosts(): Observable<any> {
+    return this.http.get(this.url + '/posts');
+  }
+  getMedia() {
+    return this.http.get(this.url + '/media');
   }
 }

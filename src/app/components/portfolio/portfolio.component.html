@@ -1,11 +1,13 @@
 <section id="post" class="container">
   <div class="row">
-    <article class="col-lg-4 col-md-6 col-sm-12 articulo">
-      <div *ngFor="let post of mediaDesign">
-        <h3>{{post.title.rendered}}</h3>
-        <div class="content" [innerHTML]="post.excerpt.rendered"></div>
-        <div>
-          <img class="img-fluid" src="{{post._embedded.source_url}}" alt="{{post.title.dendered}}">
+    <article class="col-lg-4 col-md-6 col-sm-12 bg-dark article-portfolio" *ngFor='let content of postList'>
+      <div class="align-items-center">
+        <div >
+          <h3>{{content.title.rendered}}</h3>
+          <div class="content" [innerHTML]="content.excerpt.rendered"></div>
+          <div>
+            <img class="img-fluid" src="{{content.better_featured_image.source_url}}" alt="{{content.title.dendered}}">
+          </div>
         </div>
       </div>
     </article>
