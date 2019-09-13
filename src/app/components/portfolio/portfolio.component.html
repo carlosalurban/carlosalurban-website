@@ -1,11 +1,13 @@
 <section id="post" class="container">
-    <div class="row">
-      <article class="col-lg-4 col-md-6 col-sm-12 articulo" *ngFor="let post of mediaDesign">
+  <div class="row">
+    <article class="col-lg-4 col-md-6 col-sm-12 articulo">
+      <div *ngFor="let post of mediaDesign">
         <h3>{{post.title.rendered}}</h3>
-        <div *ngIf="post.better_featured_image" (click)="displayImg()">
-        <img class="img-fluid" src="{{post.source_url}}" alt="{{post.title.dendered}}">
+        <div class="content" [innerHTML]="post.excerpt.rendered"></div>
+        <div>
+          <img class="img-fluid" src="{{post._embedded.source_url}}" alt="{{post.title.dendered}}">
+        </div>
       </div>
-    <div class="content" [innerHTML]="post.description.rendered"></div>
     </article>
-    </div>
-  </section>
+  </div>
+</section>
