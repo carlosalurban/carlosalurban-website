@@ -16,4 +16,7 @@ export class PostService {
   getMedia() {
     return this.http.get(this.url + '/media');
   }
+  getAbout() {
+    return this.http.get(this.url + '/pages?id:69');
+  }
 }

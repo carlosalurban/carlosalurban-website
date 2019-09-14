@@ -2,11 +2,14 @@
   <div class="row">
     <article class="col-lg-4 col-md-6 col-sm-12 bg-dark article-portfolio" *ngFor='let content of postList'>
       <div class="align-items-center">
-        <div >
+        <div>
           <h3>{{content.title.rendered}}</h3>
           <div class="content" [innerHTML]="content.excerpt.rendered"></div>
-          <div>
-            <img class="img-fluid" src="{{content.better_featured_image.source_url}}" alt="{{content.title.dendered}}">
+          <div class="portfolio-father-img">
+            <div class="portfolio">
+              <img class="img-fluid" src="{{content.better_featured_image.source_url}}"
+                alt="{{content.title.dendered}}">
+            </div>
           </div>
         </div>
       </div>

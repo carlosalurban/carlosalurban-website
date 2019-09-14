@@ -28,19 +28,6 @@ export class PortfolioComponent implements OnInit {
       error => {
         console.log(error);
       });
-    /*
-  this.postService.getMedia().subscribe(
-    response => {
-      for (const key in response) {
-        if (response.hasOwnProperty(key)) {
-          this.mediaList.push(response[key]);
-        }
-      }
-      console.log(this.mediaList);
-    },
-    error => {
-      console.log(error);
-    });*/
 
   }
 
