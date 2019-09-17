@@ -17,7 +17,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ContactComponent,
     ErrorComponent,
     PortfolioComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

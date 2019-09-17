@@ -23,7 +23,6 @@ export class PortfolioComponent implements OnInit {
             this.postList.push(response[key]);
           }
         }
-        console.log(this.postList);
       },
       error => {
         console.log(error);

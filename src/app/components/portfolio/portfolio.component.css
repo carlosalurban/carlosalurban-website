@@ -1,15 +1,17 @@
-#post .article-portfolio {
-    padding: 20px;
-    text-align: center;
-    margin: 10px;
+.box-subchild {
+    box-shadow: 7px 13px 23px -6px rgba(0, 0, 0, 0.6);
     border-radius: 12px;
-    color: whitesmoke;
-    box-shadow: 6px 9px 14px -10px rgba(0,0,0,0.78);
+    overflow: hidden;
+    border: none;
 }
-.portfolio{
+
+.card-img-top {
     width: 100%;
-    height: 100%;
+    height: 40vw;
+    object-fit: cover;
 }
-.portfolio-father-img{
-    
+
+.btn {
+    border-color: rgb(179, 136, 29);
+    box-shadow: 7px 13px 23px -6px rgba(0, 0, 0, 0.3);
 }
