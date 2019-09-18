@@ -11,6 +11,7 @@ import { PostService } from '../../services/post.service';
 export class PortfolioComponent implements OnInit {
   public postList = [];
   public mediaList = [];
+  public loading = false;
 
 
   constructor(private postService: PostService) { }
@@ -21,6 +22,7 @@ export class PortfolioComponent implements OnInit {
         for (const key in response) {
           if (response.hasOwnProperty(key)) {
             this.postList.push(response[key]);
+            this.loading = true;
           }
         }
       },

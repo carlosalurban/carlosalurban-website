@@ -6,3 +6,20 @@ img {
 
 }
 
+.loading-logo {
+    width: 30%;
+    margin:auto;
+    animation-duration: 1s;
+    animation-name: breath;
+    animation-iteration-count: infinite;
+}
+@keyframes breath {
+    from{
+        opacity: 100%;
+    }
+    to {
+        opacity: 10%;
+    }
+
+}
+

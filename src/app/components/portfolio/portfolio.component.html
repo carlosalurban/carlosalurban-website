@@ -1,22 +1,9 @@
-<!-- <section id="post" class="container section">
-  <div class="row box" *ngFor='let content of postList'>
-    <article class="col-lg-4 col-md-6 col-sm-12 bg-dark article-portfolio">
-      <div class="align-items-center">
-        <div>
-          <h3>{{content.title.rendered}}</h3>
-           <div class="content" [innerHTML]="content.excerpt.rendered"></div> 
-          <div class="portfolio-father-img">
-            <div class="portfolio">
-              <img class="img-fluid" src="{{content.better_featured_image.source_url}}"
-                alt="{{content.title.dendered}}">
-            </div>
-          </div>
-        </div>
-      </div>
-    </article>
-  </div>
-</section> -->
 <article class="container mt-4">
+  <div class="text-center" *ngIf=!loading>
+    <div class="loading-logo">
+      <img src="../../../assets/kadabraIcon.svg">
+    </div><p>...Cargando</p>
+  </div>
   <div class="row justify-content-center project-cards">
     <div *ngFor="let content of postList" class="col-lg-5 d-flex align-items-stretch justify-content-between m-4 ">
       <div class="card box-subchild row">
