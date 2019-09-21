@@ -1,18 +1,18 @@
-<article class="container mt-4">
-  <div class="text-center" *ngIf=!loading>
+<article class="article-posts mt-4">
+  <div class="text-center loading-box" *ngIf=!loading>
     <div class="loading-logo">
       <img src="../../../assets/kadabraIcon.svg">
-    </div><p>...Cargando</p>
+    </div><p class="loading-text">...Cargando</p>
   </div>
-  <div class="row justify-content-center project-cards">
-    <div *ngFor="let content of postList" class="col-lg-5 d-flex align-items-stretch justify-content-between m-4 ">
-      <div class="card box-subchild row">
+  <div class="row">
+    <div *ngFor="let content of postList" class="col-lg-4 col-md-6 mt-5">
+      <div class="card box-subchild">
         <img src="{{content.better_featured_image.source_url}}" class="card-img-top" alt="...">
         <div class="card-body text-center">
           <h5 class="card-title">{{content.title.rendered}}</h5>
           <p class="card-text" [innerHTML]="content.excerpt.rendered"></p>
           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          <button class="btn btn-success bg-dark">Ver</button>
+          <a class="btn btn-success bg-dark" href="{{content.better_featured_image.source_url}}" target="_blank">Ver</a>
         </div>
       </div>
     </div>

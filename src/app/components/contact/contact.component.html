@@ -1,3 +1,14 @@
-<p>
-  contact works!
-</p>
+<div class="logo-about">
+  <img src="../../../assets/kadabraIcon.svg">
+</div>
+<div class="container text-center bg-dark p-4 mt-5">
+  <div class="row" *ngFor="let info of data">
+    <div class="col-12">
+      <p class="info-p"><span class="info-heads">{{info.name}}:</span></p>
+      <p class="info-p"><span>{{info.url}}</span></p>
+    </div>
+  </div>
+  <div class="col-12 mt-5 text-center links" *ngFor="let webs of links">
+    <a href="{{webs.url}}" target="_blank">{{webs.name}}</a>
+  </div>
+</div>

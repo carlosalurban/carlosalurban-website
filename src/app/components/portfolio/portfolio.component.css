@@ -3,6 +3,7 @@
     border-radius: 12px;
     overflow: hidden;
     border: none;
+
 }
 
 .card-img-top {
@@ -12,6 +13,12 @@
 }
 
 .btn {
-    border-color: rgb(179, 136, 29);
+    border-color: #FFFBE1;
     box-shadow: 7px 13px 23px -6px rgba(0, 0, 0, 0.3);
 }
+
+.article-posts{
+    width:80%;
+    margin: auto;
+}
+

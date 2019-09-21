@@ -1,25 +1,59 @@
-
 img {
     width: 100% !important;
     height: auto;
     vertical-align: top !important;
-
 }
 
 .loading-logo {
-    width: 30%;
-    margin:auto;
-    animation-duration: 1s;
+    width:28vw;
+    margin: auto;
+    opacity: 10%;
+    animation-duration: 2s;
     animation-name: breath;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-@keyframes breath {
-    from{
-        opacity: 100%;
-    }
-    to {
-        opacity: 10%;
-    }
 
+
+@keyframes breath {
+    0% {
+        opacity: 0.1;
+        
+    }
+    25% {
+        opacity: 0.9;
+    }
+    50%{
+        opacity: 0.1
+    }
+    100% {
+        opacity: 0.8%;
+       
+    }
+}
+.loading-text{
+    font-size: 2em;
+    opacity: 10%;
+    animation-duration: 2s;
+    animation-name: breath;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
+
+@keyframes breath {
+    0% {
+        opacity: 0.1;
+        
+    }
+    25% {
+        opacity: 0.9;
+    }
+    50%{
+        opacity: 0.1
+    }
+    100% {
+        opacity: 0.8%;
+       
+    }
+}

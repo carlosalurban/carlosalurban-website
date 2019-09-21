@@ -7,11 +7,11 @@
 }
 
 .navbar a:hover {
-    color: rgb(179, 136, 29) !important;
+    color: #FFFBE1 !important;
 }
 
 .router-link-active {
-    color: rgb(179, 136, 29)!important;
+    color: #FFFBE1!important;
 }
 
 .logo {
@@ -39,7 +39,7 @@
 }
 
 .logo:hover {
-    border: 1.5px solid rgb(179, 136, 29);
+    border: 1.5px solid #FFFBE1;
 }
 .nav-list {
     display:flex;

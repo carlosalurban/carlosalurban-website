@@ -10,7 +10,6 @@ import { PostService } from '../../services/post.service';
 })
 export class PortfolioComponent implements OnInit {
   public postList = [];
-  public mediaList = [];
   public loading = false;
 
 

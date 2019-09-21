@@ -10,6 +10,7 @@ import { PostService } from '../../services/post.service';
 })
 export class AboutComponent implements OnInit {
   public pageDescript = [];
+  public loading = false;
 
   constructor(private postService: PostService) { }
 
@@ -19,6 +20,7 @@ export class AboutComponent implements OnInit {
         for (const key in response) {
           if (response.hasOwnProperty(key)) {
             this.pageDescript.push(response[key]);
+            this.loading = true;
           }
         }
       },

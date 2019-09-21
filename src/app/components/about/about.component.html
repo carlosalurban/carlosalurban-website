@@ -1,5 +1,13 @@
+<div class="text-center loading-box" *ngIf=!loading>
+  <div class="loading-logo">
+    <img src="../../../assets/kadabraIcon.svg">
+  </div>
+  <p class="loading-text">...Cargando</p>
+</div>
 <div class="container" *ngFor="let page of pageDescript">
-  <div class="logo-about"><img src="../../../assets/kadabraIcon.svg"></div>
+  <div class="logo-about">
+    <img src="../../../assets/kadabraIcon.svg">
+  </div>
   <h1 class="text-center m-5 head">{{page.title.rendered}}</h1>
-  <div class="about-text text-center content bg-dark text-white" [innerHTML]="page.content.rendered" ></div>
+  <div class="about-text text-center content bg-dark text-white" [innerHTML]="page.content.rendered"></div>
 </div>
