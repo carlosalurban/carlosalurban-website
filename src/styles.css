@@ -1,8 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
-
 img {
     width: 100% !important;
     height: auto;
     vertical-align: top !important;
 }
 
+.loading-logo {
+    width:28vw;
+    margin: auto;
+    opacity: 10%;
+    animation-duration: 2s;
+    animation-name: breath;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes breath {
+    0% {
+        opacity: 0.1;
+        
+    }
+    25% {
+        opacity: 0.9;
+    }
+    50%{
+        opacity: 0.1
+    }
+    100% {
+        opacity: 0.8%;
+       
+    }
+}
+.loading-text{
+    font-size: 2em;
+    opacity: 10%;
+    animation-duration: 2s;
+    animation-name: breath;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes breath {
+    0% {
+        opacity: 0.1;
+        
+    }
+    25% {
+        opacity: 0.9;
+    }
+    50%{
+        opacity: 0.1
+    }
+    100% {
+        opacity: 0.8%;
+       
+    }
+}

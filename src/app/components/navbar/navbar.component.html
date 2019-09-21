@@ -1,20 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand"[routerLink]="['/about']" [routerLinkActive]="['actived']">Carlosalurban-Web</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/about']" [routerLinkActive]="['actived']">Sobre mi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/portfolio']" [routerLinkActive]="['actived']">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/contact']"  [routerLinkActive]="['actived']">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <router-outlet></router-outlet>
+  <a class="navbar-brand" [routerLink]="['/about']">
+    <div class="logo">
+    <img class="maximg" src="../../../assets/kadabraIcon.svg" width="30" height="30" alt="">
+    <span class="logo-text">CarlosAlurban-Web</span>
+  </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav nav-list">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/about']" [routerLinkActive]="['router-link-active']">Sobre mi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/portfolio']" [routerLinkActive]="['router-link-active']">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/contact']" [routerLinkActive]="['router-link-active']">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
